@@ -18,10 +18,17 @@ public class MainActivity extends AppCompatActivity {
         initData();
     }
 
+    /**
+     * 初始化视图
+     */
     public void initView(){
         btn=findViewById(R.id.btn);
     }
 
+
+    /**
+     * 初始化数据
+     */
     public void initData(){
         btn.setOnClickListener(new BtnListener());
     }
