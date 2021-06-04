@@ -16,6 +16,7 @@
         android:gravity="center"
          />
     <LinearLayout
+        android:id="@+id/btn_ll"
         android:padding="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,5 +30,16 @@
         android:gravity="center"
         android:text="@string/btn1"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_ll"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
     </LinearLayout>
 </RelativeLayout>
